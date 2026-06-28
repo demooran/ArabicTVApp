@@ -8,7 +8,7 @@
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         
         <activity
-            android:name=".MainActivity"
+            android:name="com.demooran.arabictvapp.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
