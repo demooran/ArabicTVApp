@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:label="Arabic TV App"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        
-        <activity
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"> <activity
             android:name="com.demooran.arabictvapp.MainActivity"
             android:exported="true">
             <intent-filter>
