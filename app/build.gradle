@@ -30,7 +30,6 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
-    // تفعيل ميزة الـ View Binding لحل الخطأ البرمجي الحالي
     buildFeatures {
         viewBinding true
     }
