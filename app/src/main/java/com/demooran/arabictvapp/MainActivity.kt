@@ -4,16 +4,16 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
-import com.demooran.arabictvapp.databinding.ActivityMainBnding // تم تعديلها تلقائياً لتوافق التسمية الحالية للـ Binding لديك
+import com.demooran.arabictvapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBnding
+    private lateinit var binding: ActivityMainBinding
     private var player: ExoPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBnding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // تشغيل البث عند فتح التطبيق
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         player = ExoPlayer.Builder(this).build().also { exoPlayer ->
             binding.playerView.player = exoPlayer
             
-            // رابط بث مباشر تجريبي (قناة إخبارية دولية مفتوحة للبث كمثال تستطيع تغييره لاحقاً)
+            // رابط بث مباشر تجريبي (قناة إخبارية دولية مفتوحة للبث)
             val videoUrl = "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
             
             val mediaItem = MediaItem.fromUri(videoUrl)
